@@ -9,7 +9,7 @@ const collectionName = 'English';
 let Api_json = [];  // Initialize Api_json as an array
 
 async function readData() {
-    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+    const client = new MongoClient(uri);
 
     try {
         await client.connect();
